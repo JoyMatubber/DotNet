@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>About</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/umd/popper.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+     <link href="~/Content/t.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="/home/About">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/home/Education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/home/Project">Project</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/home/Reference">Reference</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div>
+
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <h1 style="text-align: center">About Me</h1>
+                <h3>Name : @ViewBag.Name</h3>
+                <H3>ID : @ViewBag.Id</H3>
+                <H3>DEPARTMENT: @ViewData["Dep"]</H3>
+                <H3>Semesters : @ViewData["Sem"]</H3>
+                
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
